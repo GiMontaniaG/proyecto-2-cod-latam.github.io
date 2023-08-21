@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/*Header*/
+.logo{
+  max-height: 65px;
+  border-radius: 25%;  
+  border-style: double; /*Borde doble*/
+}
+
+header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 20px 20px;
+  position: fixed;
+  z-index: 150px;
+  top: 0;
+  left: 0;
+  background-color: #191D88;
+ 
+}
+
+
+ul {
+  display: flex;
+  list-style: none;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+
+nav li {
+  margin-right: 10px;
+  
+}
+
+nav li:last-child {
+  margin-right: 20px;
+}
+
+
+li.menu-item {
+  padding: 5px;
+  display: inline-block;
+ 
+}
+
+
+li.menu-item :hover {
+  background-color: #116ac2; /*Color cuando apoyo el cursor*/
+  color: #07090c;
+  
+
+}
+
+.menuprincipal {
+  display: none;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*Modo oscuro*/
+.dark {
+    color: #4892ce;
+  }
+  
+.light {
+    color: #000000;
+  }
+
+.plate {
+  background-color: #000000;
+  color: #4892ce; /*Color inicio contacto*/
+}
+
+.blue {
+  color: #19a3c9;
+  background-color: #000000;
+  border-radius: 12%;
+  padding: 20px;;
+}
+
+.fondo3 {
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+}
+
+
+
+.switch {
+    display: block;
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    --size-of-icon: 1.4em;
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+  }
+  
+  /*HTML checkbox*/
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /*Slider*/
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f5;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon,1.4em);
+    width: var(--size-of-icon,1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset,0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg,#000000,#000000 70%);
+    ;
+   transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #303136;
+  }
+  
+  input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+    background: #303136;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #4a8ad4;
+  }
+
+/*Inicio*/
+body{
+  background-color: #1450A3;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+}
+
+.fotodeperfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 20%;
+    border: solid 7px;
+    object-fit: cover;
+    margin-top: 150px;
+    margin-bottom: 40px;    
+}
+
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+h1, h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #0f0f0f;
+}
+
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #0f0f0f;
+    line-height: 190%;
+    
+}
+
+
+.parrafo2 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #0f0f0f;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+h2{
+    font-size: 28px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.inicio{
+    min-height: 20vh;
+    padding-top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.inicio .p{
+  
+    font-size:18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+.descargarcv {
+    background: #CD6688;
+    font-family: inherit;
+    padding: 0.8em 1.5em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+  }
+  
+  .descargacv:hover {
+    transform: translate(-0.1em, -0.1em);
+    box-shadow: 0.15em 0.15em;
+  }
+  
+  .descargacv:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+  }
+
+
+/*Contacto*/
+#hablemos {
+  
+  border-radius: 20px;
+    background-color: #337CCF;
+    border: solid 5px;
+}
+
+
+.hablemos, p{
+    text-align: center;
+    padding: 30px;
+    border-radius: 100%;
+}
+
+.p{
+    font-size:18px;
+    margin-top: 20px;
+ }
+
+
+ .iconos ul{
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    align-items: center;
+    
+ }
+
+ .iconos img {
+    max-width: 40%;
+    height: auto;
+    align-items:center;
+    margin: 30%;
+    padding: 4%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out
+ }
+
+.icono {
+    border-radius:150%;
+   
+}
+
+.icono img:hover {
+  filter: brightness(150%);
+  background-color: #337CCF;
+  border-radius: 30%;
+  transform: scale(1.8);
+}
+
+
+ #contacto  {
+    opacity: 0.6;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: #d2e0f0;
+    border: solid 5px;
+ }
+
+/*Footer*/
+footer {
+    background-color: #CD6688;
+    height: 90px;
+    padding: 3%;
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #191D88;
+}
+
+
+
+@media (min-width: 1024px) {
+   
+    section#inicio {
+        flex-direction: row;
+        }
+
+    article p {
+        text-align: left;
+    }
+
+    ul.menu { font-size: 180%;}
+
+    h1 {
+        text-align: left;
+        font-size: 45px;
+        margin-top: 12%;
+        }
+
+    .logo {width: 110%;
+        }
+
+   .descarga{
+        color:  #000000;
+        font-size: 30px;
+        display: inline-block;
+        padding: 10px 20px;
+    }
+
+    .fotodeperfil{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 400px;
+        border-radius: 20%;
+        border: solid 4px;
+        object-fit: cover;
+        margin-top: 150px;
+        margin-bottom: 40px;
+    } 
+
+
+    ul#menu {
+        display: flex;
+        font-size: 10px;
+    }
+    
+    
+}
+
+@media screen and (max-width:1024px){
+    
+    .menuprincipal {
+        display: flex;
+        align-items: center;
+        height: 90px;
+        background-color: transparent;
+        margin-right: 5%;
+        padding: 3%;
+        border: none;
+
+    }
+
+    .menu { 
+        font-size: 150%;
+    
+    }
+
+
+    nav {
+        display: none;
+        }
+      
+
+      /*Menú mobile*/
+      header.mostrar-menu {
+        flex-wrap: wrap;
+        height: 30vh;
+        align-items: flex-start;
+        transition: height 0.2s;
+      }
+
+      header.mostrar-menu nav {
+        display: block;
+        width: 100%;
+        margin-bottom: 3%;
+      }
+
+      header.mostrar-menu ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+
+    /*Boton */
+    #checkbox {
+        display: none;
+      }
+      
+      .toggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition-duration: .5s;
+      }
+      
+      .bars {
+        width: 100%;
+        height: 4px;
+        background-color: rgb(255, 255, 255); /*Color menú*/
+        border-radius: 4px;
+      }
+      
+      #bar1,#bar3 {
+        width: 70%;
+      }
+      
+      #checkbox:checked + .toggle .bars {
+        position: absolute;
+        transition-duration: .5s;
+      }      
+      
+      #checkbox:checked + .toggle #bar1 {
+        width: 100%;
+        transform: rotate(45deg);
+        transition-duration: .5s;
+      }
+      
+      #checkbox:checked + .toggle #bar3 {
+        width: 100%;
+        transform: rotate(-45deg);
+        transition-duration: .5s;
+      }
+      
+      #checkbox:checked + .toggle {
+        transition-duration: .5s;
+        transform: rotate(180deg);
+      }
+
+}
